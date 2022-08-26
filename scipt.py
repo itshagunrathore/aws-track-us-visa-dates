@@ -69,4 +69,4 @@ w_file.close()
 
 if flag is True:
     print("Sending Text MSG")
-    client.publish(TopicArn="arn:aws:sns:ap-south-1:044601433012:shagunvisatopic", Message=f"Visa wait times has changed: {json.dumps(mymap)}", MessageStructure="None")
+    client.publish(TopicArn="<TOPIC ARN>", Message=f"Visa wait times has changed: {json.dumps(mymap)}", MessageStructure="None")
